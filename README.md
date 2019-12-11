@@ -1,10 +1,10 @@
 # What it does
 
-* "git diff --name-only" is called to get all changed files
+* `git diff --name-only` is called to get all changed files
 * all files with endings ".tex" are selected
 	* a diff of the master-document is generated
 	* a diff of all chapters that changed is generated
-	* an "\includeonly{chapterX}" is added to the master-diff-document 
+	* an `\includeonly{chapterX}` is added to the master-diff-document 
 	  so that only chapters that have changed are compiled
 	* the master-diff is compiled 
 	* the generated pdf is moved to the main folder
@@ -25,9 +25,9 @@
 * install latexdiff (e.g. via MikTeX console)
 
 * update "ldiff.sh"
-	* update the path to "perl.exe" (perl_exec) 
-	* update the path to the "latexdiff" perl-script (latexdiffpath)
-	* update the name of the Master-document (MASTER)
+	* update the path to "perl.exe" (`perl_exec`) 
+	* update the path to the "latexdiff" perl-script (`latexdiffpath`)
+	* update the name of the Master-document (`MASTER`)
 
 * add the following lines to the git config file located here:
 	```
