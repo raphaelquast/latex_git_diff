@@ -15,7 +15,7 @@
 # What it does (currently) not do
 
 * include changes to files other than .tex files
-  (e.g. if an image changed but it's name did not change, this will not show up)
+  (e.g. if an image changed but it's name did not, this will not show up)
 * if no ".tex" file changed, no message is returned and nothing happens
 
 
@@ -30,14 +30,14 @@
 	* update the name of the Master-document (MASTER)
 
 * add the following lines to the git config file located here:
-
+	```
 	[alias]
 		ldiff = difftool -t latex 
 	[difftool.latex]
 		cmd = "  >>>  PATH TO ldiff.sh  <<<  " "$LOCAL" "$REMOTE"
-
+	```
 * READY, now simply use it via:
-
+	```
 	git ldiff
-
+	```
 
