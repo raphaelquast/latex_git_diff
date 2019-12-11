@@ -26,6 +26,7 @@
 
 * update "ldiff.sh"
 	* update the path to "perl.exe" (`perl_exec`) 
+		* this is required to avoid issues with git's own perl-distribution
 	* update the path to the "latexdiff" perl-script (`latexdiffpath`)
 	* update the name of the Master-document (`MASTER`)
 
