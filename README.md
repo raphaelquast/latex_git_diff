@@ -1,6 +1,6 @@
 # A shell-script to generate PDF diffs of LaTeX repositories
 
-# What it does
+## What it does
 
 * `git diff --name-only` is called to get all changed files
 * all files with endings ".tex" are selected
@@ -14,14 +14,14 @@
 	* original files are kept as-is !  
 
 
-# What it does (currently) not do
+## What it does (currently) not do
 
 * include changes to files other than .tex files
   (e.g. if an image changed but it's name did not, this will not show up)
 * if no ".tex" file changed, no message is returned and nothing happens
 
 
-# Usage
+## Usage
 
 * install a perl-distribution (like strawberry-perl) (required for latexdiff)
 * install latexdiff (e.g. via MikTeX console)
