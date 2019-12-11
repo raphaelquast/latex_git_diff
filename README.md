@@ -1,3 +1,5 @@
+# A shell-script to generate PDF diffs of LaTeX repositories
+
 # What it does
 
 * `git diff --name-only` is called to get all changed files
